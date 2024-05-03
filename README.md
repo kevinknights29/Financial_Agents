@@ -57,6 +57,18 @@ By focusing on these key aspects, the Financial_Agents project aims to address c
 
 ## Alternatives Considered
 
+Several alternative approaches were considered during the design phase of the Financial_Agents project. Each alternative presented unique trade-offs and considerations, ultimately leading to the selection of the primary design outlined in this document.
+
+- Manual Data Entry: One alternative considered was a manual data entry approach, where users would input transaction details manually into the system. While this approach offers flexibility and control over data entry, it introduces the risk of errors and requires significant user effort. Additionally, it lacks the automation and efficiency goals of the project.
+
+- Third-Party API Integration: Another alternative explored was integrating with third-party financial APIs to retrieve transaction data directly from banking institutions. While this approach could provide real-time data access and reduce reliance on email notifications, it introduces dependencies on external services and potential security concerns. Moreover, it may limit the project's scalability and flexibility in supporting various banking systems.
+
+- Rule-Based Parsing: A rule-based parsing approach for email notifications was also considered. This involves defining specific rules and patterns to extract transaction details from emails. While initially simpler to implement, this approach may lack the adaptability and accuracy required to handle diverse email formats and languages effectively. It could also require frequent maintenance to accommodate changes in email formats.
+
+- Machine Learning Email Parsing: Lastly, a machine learning-based approach to email parsing, similar to the one employed in the project, was evaluated. This approach utilizes natural language processing and machine learning algorithms to extract transaction details from email notifications automatically. While more complex to implement initially, this approach offers greater flexibility, accuracy, and scalability, especially in handling diverse email formats and languages. Additionally, it aligns with the project's objectives of leveraging advanced AI technologies to enhance automation and user experience.
+
+After careful evaluation of these alternatives, the decision was made to proceed with the machine learning-based email parsing approach due to its superior accuracy, scalability, and alignment with the project goals of automation and user-centric design. This approach enables the Financial_Agents project to deliver efficient and personalized financial assistance to users while minimizing manual effort and errors.
+
 ## Learning Logs
 
 | Date | Learning |
@@ -64,6 +76,8 @@ By focusing on these key aspects, the Financial_Agents project aims to address c
 |      |          |
 
 ## Resources
+
+- [Design Docs at Google](https://www.industrialempathy.com/posts/design-docs-at-google/)
 
 ---
 
