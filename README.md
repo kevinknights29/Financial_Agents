@@ -9,8 +9,9 @@ This project aims to create an agentic workflow to help users improve their fina
 3. [Scope and Context](#scope-and-context)
 4. [System Design](#system-design)
 5. [Alternatives Considered](#alternatives-considered)
-6. [Learning Logs](#learning-logs)
-7. [Resources](#resources)
+6. [Cross-cutting Concerns](#cross-cutting-concerns)
+7. [Learning Logs](#learning-logs)
+8. [Resources](#resources)
 
 ---
 
@@ -68,6 +69,36 @@ Several alternative approaches were considered during the design phase of the Fi
 - Machine Learning Email Parsing: Lastly, a machine learning-based approach to email parsing, similar to the one employed in the project, was evaluated. This approach utilizes natural language processing and machine learning algorithms to extract transaction details from email notifications automatically. While more complex to implement initially, this approach offers greater flexibility, accuracy, and scalability, especially in handling diverse email formats and languages. Additionally, it aligns with the project's objectives of leveraging advanced AI technologies to enhance automation and user experience.
 
 After careful evaluation of these alternatives, the decision was made to proceed with the machine learning-based email parsing approach due to its superior accuracy, scalability, and alignment with the project goals of automation and user-centric design. This approach enables the Financial_Agents project to deliver efficient and personalized financial assistance to users while minimizing manual effort and errors.
+
+## Cross-cutting Concerns
+
+### Security
+
+- Security measures are implemented at various levels within the project to safeguard sensitive financial information and protect against unauthorized access or data breaches. These measures include:
+
+- Encryption: All communication channels, including email notifications and database connections, are encrypted to prevent interception and unauthorized access to sensitive data.
+
+- Access Control: Role-based access control mechanisms are employed to restrict access to the financial database and other critical system components, ensuring that only authorized personnel can interact with sensitive information.
+Data Sanitization: Incoming data, particularly from email notifications, undergoes rigorous sanitization and validation processes to mitigate the risk of injection attacks and data manipulation.
+
+### Privacy
+
+Privacy considerations are central to the design of the Financial_Agents project, ensuring that user data is handled in compliance with applicable privacy regulations and best practices. Key privacy measures include:
+
+- Data Minimization: Only essential transaction details are collected and stored in the financial database, minimizing the collection of personally identifiable information (PII) and reducing the risk of privacy breaches.
+Anonymization: Where possible, user data is anonymized to protect user privacy while still enabling meaningful analysis and insights generation.
+
+- User Consent: Users are informed about the types of data collected and their purposes, and explicit consent is obtained before accessing or processing any sensitive information.
+
+### Observability
+
+Observability mechanisms are incorporated into the Financial_Agents project to provide insights into system performance, reliability, and potential issues. These mechanisms include:
+
+- Logging: Comprehensive logging is implemented throughout the system to record key events, errors, and user interactions, facilitating troubleshooting and auditing.
+
+- Monitoring: Real-time monitoring tools are employed to track system metrics, such as transaction processing times, email parsing accuracy, and database performance, enabling proactive identification and resolution of issues.
+
+- Alerting: Automated alerting systems notify administrators of any anomalies or critical events, enabling timely intervention and ensuring uninterrupted service availability.
 
 ## Learning Logs
 
