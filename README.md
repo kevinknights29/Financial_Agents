@@ -31,3 +31,19 @@ This project aims to create an agentic workflow to help users improve their fina
 |      |          |
 
 ## Resources
+
+---
+
+## Version Management
+
+To create a changelog, run:
+
+```bash
+cz changelog
+```
+
+And to bump the changelog version after performing modifications, run:
+
+```bash
+cz bump
+```
